@@ -14,6 +14,10 @@ class View
         $this->path = $route['controller'] . '/' . $route['action'];
     }
 
+    public function setLayout($layout) {
+        $this->layout = $layout;
+    }
+
     public function render($title, $vars = [])
     {
         extract($vars);
@@ -37,7 +41,7 @@ class View
     public static function errorCode($code)
     {
         http_response_code($code);
-        $path = 'App/Views/errors/' . $code. '.php';
+        $path = '../' .'App/Views/errors/' . $code. '.php';
         if (file_exists($path)) {
             require $path;
         } else {

@@ -24,19 +24,19 @@ return [
     ],
 
     //AdminController
-    'list' => [
+    'admin' => [
         'controller' => 'admin',
         'action' => 'index',
     ],
-    'add' => [
+    'admin/add' => [
         'controller' => 'admin',
         'action' => 'add',
     ],
-    'edit' => [
+    'admin/edit' => [
         'controller' => 'admin',
         'action' => 'edit',
     ],
-    'delete' => [
+    'admin/delete' => [
         'controller' => 'admin',
         'action' => 'delete',
     ],

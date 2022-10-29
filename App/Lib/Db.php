@@ -26,6 +26,7 @@ class Db
                 $stmt->bindValue(":{$key}", $val);
             }
         }
+        
         $stmt->execute();
 
         return $stmt;

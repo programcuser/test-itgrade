@@ -2,7 +2,7 @@
 
 return [
     'all' => [
-        'index',
+        
     ],
     'authorize' => [
         
@@ -11,7 +11,7 @@ return [
 
     ],
     'admin' => [
-        'list',
+        'index',
         'add',
         'edit',
         'delete',
